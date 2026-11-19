@@ -16,6 +16,14 @@ root@neo-bangkok:~$ _
   <img src="./assets/dossier.svg" alt="Subject dossier" width="100%"/>
 </p>
 
+### `> SELECTED WORKS`
+
+<p align="center">
+  <a href="https://suisui.co.th"><img src="./assets/work-01-suisui.svg" alt="01 SUISUI TECH" width="32%"/></a>
+  <a href="https://nontapat.me"><img src="./assets/work-02-portfolio.svg" alt="02 nontapat.me" width="32%"/></a>
+  <a href="https://catarot.love"><img src="./assets/work-03-catarot.svg" alt="03 Catarot" width="32%"/></a>
+</p>
+
 ### `> ARSENAL`
 
 <p>
