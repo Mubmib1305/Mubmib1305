@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" width="1200" height="340" font-family="'JetBrains Mono','SFMono-Regular',Menlo,Consolas,monospace">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#0ff" stroke-opacity="0.07"/>
+    </pattern>
+    <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="2" fill="#000" fill-opacity="0.35"/>
+    </pattern>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#05060b"/>
+      <stop offset="0.6" stop-color="#0b0710"/>
+      <stop offset="1" stop-color="#1a0508"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.55" r="0.5">
+      <stop offset="0" stop-color="#ff1f3d" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#ff1f3d" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="neon" x="-20%" y="-50%" width="140%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="frame"><rect width="1200" height="340" rx="14"/></clipPath>
+    <style>
+      .glitch-r { animation: gr 3.2s infinite steps(1); }
+      .glitch-c { animation: gc 3.2s infinite steps(1); }
+      .sweep { animation: sweep 4s linear infinite; }
+      .blink { animation: blink 1s infinite steps(1); }
+      .rec { animation: blink 1.4s infinite steps(1); }
+      .type { animation: type 3.5s steps(34) infinite; }
+      @keyframes gr { 0%,88%,100%{transform:translate(0,0)} 90%{transform:translate(-7px,2px)} 92%{transform:translate(5px,-3px)} 94%{transform:translate(-3px,0)} }
+      @keyframes gc { 0%,88%,100%{transform:translate(0,0)} 90%{transform:translate(7px,-2px)} 92%{transform:translate(-5px,3px)} 94%{transform:translate(3px,1px)} }
+      @keyframes sweep { from{transform:translateY(-40px)} to{transform:translateY(380px)} }
+      @keyframes blink { 0%,49%{opacity:1} 50%,100%{opacity:0} }
+      @keyframes type { 0%{clip-path:inset(0 100% 0 0)} 70%,100%{clip-path:inset(0 0 0 0)} }
+    </style>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="340" fill="url(#bg)"/>
+    <rect width="1200" height="340" fill="url(#grid)"/>
+    <rect width="1200" height="340" fill="url(#glow)"/>
+
+    <!-- crime-scene tape -->
+    <g transform="rotate(-6 1100 40)">
+      <rect x="820" y="10" width="520" height="34" fill="#ffd400"/>
+      <text x="840" y="34" font-size="17" font-weight="800" fill="#111" letter-spacing="3">CRIME SCENE DO NOT CROSS / CRIME SCENE DO NOT CROSS</text>
+    </g>
+
+    <!-- HUD corners -->
+    <g stroke="#0ff" stroke-width="2" fill="none" stroke-opacity="0.8">
+      <path d="M24 64V24H64"/><path d="M1176 296V316H1136"/>
+      <path d="M24 276V316H64"/>
+    </g>
+
+    <text x="44" y="84" font-size="14" fill="#0ff" fill-opacity="0.8" letter-spacing="4">CASE FILE #1305 // NEO-BANGKOK CYBER DIVISION</text>
+    <circle cx="1120" cy="300" r="6" fill="#ff1f3d" class="rec"/>
+    <text x="1060" y="305" font-size="13" fill="#ff1f3d" letter-spacing="2">REC</text>
+
+    <!-- glitch name -->
+    <g font-size="118" font-weight="900" letter-spacing="10">
+      <text x="44" y="200" fill="#ff1f3d" fill-opacity="0.85" class="glitch-r">MUBMIB</text>
+      <text x="44" y="200" fill="#00f0ff" fill-opacity="0.85" class="glitch-c">MUBMIB</text>
+      <text x="44" y="200" fill="#f4f6ff" filter="url(#neon)">MUBMIB</text>
+    </g>
+
+    <g class="type">
+      <text x="48" y="246" font-size="20" fill="#9cff57">&gt; status: AT LARGE // shipping code at night</text>
+    </g>
+    <rect x="612" y="230" width="12" height="20" fill="#9cff57" class="blink"/>
+
+    <text x="48" y="292" font-size="14" fill="#8b93a7" letter-spacing="2">ALIAS: Nontapat  ·  ORG: SUISUI TECH  ·  LOC: BANGKOK 13.75N 100.50E</text>
+
+    <!-- target reticle -->
+    <g transform="translate(985 175)" stroke="#ff1f3d" fill="none" stroke-width="2">
+      <circle r="62" stroke-opacity="0.55"/>
+      <circle r="38" stroke-dasharray="6 8">
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="9s" repeatCount="indefinite"/>
+      </circle>
+      <path d="M-84 0H-48M48 0H84M0 -84V-48M0 48V84"/>
+      <circle r="4" fill="#ff1f3d"/>
+    </g>
+    <text x="928" y="270" font-size="12" fill="#ff1f3d" letter-spacing="3">TARGET LOCKED</text>
+
+    <rect class="sweep" x="0" y="0" width="1200" height="3" fill="#0ff" fill-opacity="0.35"/>
+    <rect width="1200" height="340" fill="url(#scan)"/>
+  </g>
+  <rect x="1" y="1" width="1198" height="338" rx="14" fill="none" stroke="#ff1f3d" stroke-opacity="0.5"/>
+</svg>
