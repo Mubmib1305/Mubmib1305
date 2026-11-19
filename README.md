@@ -5,9 +5,9 @@ I run [SUISUI TECH](https://suisui.co.th), a software studio in Bangkok, and lea
 ### Selected work
 
 <p>
-  <a href="https://suisui.co.th"><img src="./assets/work-01-suisui.svg" alt="SUISUI TECH" width="32%"/></a>
-  <a href="https://nontapat.me"><img src="./assets/work-02-portfolio.svg" alt="nontapat.me" width="32%"/></a>
-  <a href="https://catarot.love"><img src="./assets/work-03-catarot.svg" alt="Catarot" width="32%"/></a>
+  <a href="https://suisui.co.th"><img src="./assets/work-01-suisui-v2.svg" alt="SUISUI TECH" width="32%"/></a>
+  <a href="https://nontapat.me"><img src="./assets/work-02-portfolio-v2.svg" alt="nontapat.me" width="32%"/></a>
+  <a href="https://catarot.love"><img src="./assets/work-03-catarot-v2.svg" alt="Catarot" width="32%"/></a>
 </p>
 
 ### Stack
